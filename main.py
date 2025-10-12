@@ -1,2 +1,2 @@
-print("Hello,git")
-print("Hello, Stan")
+def print_world():
+    print("Word!")
