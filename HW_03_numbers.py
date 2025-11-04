@@ -1,7 +1,7 @@
 import re
 
 def normalize_phone(phone_number):   # Create a function
-    sanitized_number = re.sub(r'[^\d+]',  '', phone_number.strip())   # Remove all non-digit characters except '+'
+    sanitized_number = re.sub(r'[^\d+]',  '', phone_number)   # Remove all non-digit characters except '+'
     if sanitized_number.startswith('+'):   # Check if number starts with +
         return sanitized_number
     if sanitized_number.startswith('380'):   # Check if number starts with 380
